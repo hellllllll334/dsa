@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "behind_qou_spear",
+  "version": "${version}",
+  "name": "Behind QOU Spear Kill",
+  "description": "Elytra spear hack that locks onto targets and flies through them repeatedly without fireworks.",
+  "authors": [
+    "Notrack"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.behindqou.spear.SpearMod"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
