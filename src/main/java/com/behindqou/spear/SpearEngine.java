@@ -58,11 +58,11 @@ public class SpearEngine {
         }
 
         // Make sure we are gliding (server must be told too)
-        if (!player.isFallFlying()) {
+                if (!player.isGliding()) {
             if (player.isOnGround()) {
                 return; // wait until the player jumps
             }
-            player.startFallFlying();
+                    player.startGliding();
             player.networkHandler.sendPacket(
                 new ClientCommandC2SPacket(player, ClientCommandC2SPacket.Mode.START_FALL_FLYING));
         }
